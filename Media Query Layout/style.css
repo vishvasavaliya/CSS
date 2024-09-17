@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "menu"
+        "hero"
+        "main"
+        "banner"
+        "extra"
+        "image";
+    padding: 10px;
+}
+
+/* Grid area definitions */
+.header { grid-area: header; background-color: #1A1A1A; color: white; padding: 20px; text-align: center; }
+.menu { grid-area: menu; background-color: #E94E32; color: white; padding: 20px; text-align: center; }
+.hero { grid-area: hero; background-color: #4E89C2; color: white; padding: 20px; text-align: center; }
+.main { grid-area: main; background-color: #1A1A1A; color: white; padding: 20px; text-align: center; }
+.banner { grid-area: banner; background-color: #FFD166; color: black; padding: 20px; text-align: center; }
+.extra { grid-area: extra; background-color: #06D6A0; color: white; padding: 20px; text-align: center; }
+.image { grid-area: image; background-color: #A8DADC; color: black; padding: 20px; text-align: center; }
+
+/* Mobile Layout */
+@media (max-width: 599px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "menu"
+            "hero"
+            "main"
+            "banner"
+            "extra"
+            "image";
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (min-width: 721px) {
+    .header { grid-area: header; }
+    .menu { grid-area: menu; }
+    .hero { grid-area: hero; }
+    .main { grid-area: main; }
+    .banner { grid-area: banner; }
+    .extra { grid-area: extra; }
+    .image { grid-area: image; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 40px 2fr repeat(4, 1fr);
+      grid-template-areas:
+        "header header header header"
+        "hero hero hero hero"
+        "menu main main main"
+        "menu main main main"
+        "menu banner banner banner"
+        "menu extra image image";
+    }
+   }
+
+/* Desktop Layout */
+@media (min-width: 1001px) {
+    .grid {
+      grid-template-areas:
+        "header menu menu menu"
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "main main . image"
+        "main main . extra"
+        "banner banner banner banner";
+    }
+   }
