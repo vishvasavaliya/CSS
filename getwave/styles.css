@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.team-section {
+    background-color: #1c1c1c;
+    color: white;
+    height: 750px;
+    position: relative;
+    padding: 50px 0;
+}
+
+.team-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-heading h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.team-heading p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.wave-container {
+    position: absolute;
+    /* top: 50%; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 45%;
+}
+
+.member {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(30px);
+    /* General placement for members */
+    transition: transform 0.3s ease-in-out;
+}
+
+#member-1 {
+    /* transform: translateY(95px); */
+    /* Different placement for each member */
+}
+
+#member-2 {
+    transform: translateY(50px);
+}
+
+#member-4 {
+    transform: translateY(130px);
+}
+
+#member-5 {
+    transform: translateY(60px);
+}
+
+.member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #ff523b;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.member:hover img {
+    transform: scale(1.1);
+}
+
+.highlight img {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ff523b;
+}
+
+.highlight {
+    transform: translateY(70px);
+    /* Highlight the central member */
+}
+
+.hover-info {
+    position: absolute;
+    bottom: -100px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #ff523b;
+}
+
+.member:hover .hover-info {
+    opacity: 1;
+}
+
+.hover-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.hover-info p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+.wave-container {
+    height: 60vh;
+    background: #352524;
+}
+
+.wave-container svg {
+    transform: rotate(-180deg);
+}
