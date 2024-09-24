@@ -35,7 +35,6 @@ html {
 
 .wave-container {
     position: absolute;
-    /* top: 50%; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -61,14 +60,10 @@ html {
     flex-direction: column;
     align-items: center;
     transform: translateY(30px);
-    /* General placement for members */
     transition: transform 0.3s ease-in-out;
 }
 
-#member-1 {
-    /* transform: translateY(95px); */
-    /* Different placement for each member */
-}
+
 
 #member-2 {
     transform: translateY(50px);
@@ -103,7 +98,6 @@ html {
 
 .highlight {
     transform: translateY(70px);
-    /* Highlight the central member */
 }
 
 .hover-info {

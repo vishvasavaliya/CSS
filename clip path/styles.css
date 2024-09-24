@@ -1,18 +1,15 @@
- /* Basic reset */
  * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
  }
 
- /* Body styles */
  body {
      font-family: 'Arial', sans-serif;
      line-height: 1.6;
      background-color: #f4f4f4;
  }
 
- /* Navigation styles */
  header {
      position: fixed;
      top: 0;
@@ -25,7 +22,6 @@
      justify-content: space-between;
      align-items: center;
      padding: 20px;
-     /* background-color: #333; */
      color: #fff;
  }
 
@@ -50,17 +46,14 @@
      color: #f07;
  }
 
- /* Hero Section with Clip-Path */
  .hero {
      position: relative;
      height: 100vh;
      background: url('https://images.pexels.com/photos/128234/pexels-photo-128234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
      clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
-     /* This creates the angular shape */
  }
 
  .overlay {
-     /* position: absolute; */
      top: 0;
      left: 0;
      right: 0;
@@ -122,7 +115,6 @@
      color: #000;
  }
 
- /* Media Queries for responsiveness */
  @media (max-width: 768px) {
      .overlay h2 {
          font-size: 2.5rem;

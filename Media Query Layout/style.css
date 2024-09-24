@@ -22,16 +22,62 @@ body {
     padding: 10px;
 }
 
-/* Grid area definitions */
-.header { grid-area: header; background-color: #1A1A1A; color: white; padding: 20px; text-align: center; }
-.menu { grid-area: menu; background-color: #E94E32; color: white; padding: 20px; text-align: center; }
-.hero { grid-area: hero; background-color: #4E89C2; color: white; padding: 20px; text-align: center; }
-.main { grid-area: main; background-color: #1A1A1A; color: white; padding: 20px; text-align: center; }
-.banner { grid-area: banner; background-color: #FFD166; color: black; padding: 20px; text-align: center; }
-.extra { grid-area: extra; background-color: #06D6A0; color: white; padding: 20px; text-align: center; }
-.image { grid-area: image; background-color: #A8DADC; color: black; padding: 20px; text-align: center; }
+.header {
+    grid-area: header;
+    background-color: #1A1A1A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-/* Mobile Layout */
+.menu {
+    grid-area: menu;
+    background-color: #E94E32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: #4E89C2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #1A1A1A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: #FFD166;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.extra {
+    grid-area: extra;
+    background-color: #06D6A0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.image {
+    grid-area: image;
+    background-color: #A8DADC;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
 @media (max-width: 599px) {
     .container {
         grid-template-areas: 
@@ -69,7 +115,6 @@ body {
     }
    }
 
-/* Desktop Layout */
 @media (min-width: 1001px) {
     .grid {
       grid-template-areas:

@@ -19,9 +19,9 @@ body, html {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center;     /* Centers content horizontally */
-    text-align: center;      /* Ensures text alignment */
+    justify-content: center;
+    align-items: center;    
+    text-align: center;      
 }
 .left-side h2 {
     font-size: 36px;
@@ -70,5 +70,5 @@ body, html {
 }
 .right-side {
     flex: 1;
-    background: url("https://images.pexels.com/photos/236964/pexels-photo-236964.jpeg?auto=compress&cs=tinysrgb&w=1200") no-repeat center center/cover;
+    width: 50%;
 }
